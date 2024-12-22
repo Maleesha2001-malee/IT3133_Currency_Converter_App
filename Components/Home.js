@@ -5,5 +5,11 @@ import CurrencyInput from './components/CurrencyInput';
 
 
 export default function Home() {
-    return();
+    return (
+        <View style={styles.container}>
+            <Text variant="headlineLarge">LKR to USD Converter</Text>
+            <CurrencyInput value={amountLKR} onChange={setAmountLKR} />
+            
+        </View>
+    );
 }
