@@ -4,7 +4,7 @@ import { Button } from 'react-native-paper';
 
 export default function ConvertButton({ onPress }) {
   return (
-    <Button mode="contained" onPress={onPress} style={styles.button}>
+    <Button mode="outlined" onPress={onPress} style={styles.button}>
       Convert
     </Button>
   );
