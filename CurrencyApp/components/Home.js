@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { StyleSheet, View} from 'react-native';
 import { Text } from 'react-native-paper';
 import CurrencyInput from './CurrencyInput';
 import ConvertButton from './ConvertButton';
@@ -21,7 +22,7 @@ export default function Home() {
 
   return (
     <>
-      <Text variant="headlineLarge">LKR to USD Converter</Text>
+      <Text variant="headlineLarge" style={styles.text}>LKR to USD Converter</Text>
       <CurrencyInput value={amountLKR} onChange={setAmountLKR} />
       <ConvertButton onPress={convertCurrency} />
       <ConversionResult result={convertedUSD} />
@@ -30,5 +31,14 @@ export default function Home() {
   );
 }
 
+const styles = StyleSheet.create({
+    text: {
+      color: 'purple', 
+      fontSize: 20, 
+      textAlign: 'center',
+      fontWeight: 'bold',
+      textDecorationLine: 'underline'
+    },
+  });
   
 
