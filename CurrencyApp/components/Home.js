@@ -7,7 +7,7 @@ import ConversionResult from './CoversionResult';
 export default function Home() {
     const [amountLKR, setAmountLKR] = useState('');
     const [convertedUSD, setConvertedUSD] = useState(null);
-    const exchangeRate = 300;
+    const exchangeRate = 0.0030;
   
     const convertCurrency = () => {
       const lkr = parseFloat(amountLKR);
