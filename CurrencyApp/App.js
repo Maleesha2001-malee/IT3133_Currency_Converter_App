@@ -8,13 +8,11 @@ export default function App() {
   return (
     <PaperProvider>
       <SafeAreaView>
-        <PaperProvider>
           <View style={styles.container}>
             <Home />
             <StatusBar style="auto" />
           </View>
-        </ScrollView>
-      </SafeAreaView>
+        </SafeAreaView>
     </PaperProvider>
   );
 }
